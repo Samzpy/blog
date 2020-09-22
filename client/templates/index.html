@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<!--
+author:lvlu
+date:2018-07
+desc:this demo is about blog. PLEASE NOTE:If you have trouble running it ,try any of the other demos or connect with auther.
+A ny individuals and organizations and not for commercial use, professiona website for customized web site.
+-->
+<head>
+  <meta charset="utf-8">
+  <title>首頁-個人部落格</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/bitbug_favicon.ico" type="image/x-icon" />
+  <link href="static/css/base.css" rel="stylesheet">
+  <link href="static/css/index.css" rel="stylesheet">
+  <link href="static/css/m.css" rel="stylesheet">
+  <script src="static/js/jquery.min.js" type="text/javascript"></script>
+  <script src="static/js/jquery.easyfader.min.js"></script>
+  <script src="static/js/scrollReveal.js"></script>
+  <script src="static/js/common.js"></script>
+  <script src="static/js/index_common.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <!--menu begin-->
+    <div class="menu">
+      <script>
+        token = window.localStorage.getItem('dnblog_token');
+        username = window.localStorage.getItem('dnblog_user');
+        document.write(makeindex(username))
+        loginOut()
+      </script>
+    </div>
+
+  </header>
+  <article>
+    <!--banner begin-->
+    <div class="picsbox">
+      <div class="banner">
+        <div id="banner" class="fader">
+          <li class="slide"><a href="http://127.0.0.1:5000/SamzF/content/detail/8" target="_blank"><img src="static/images/banner01.jpg"><span class="imginfo">python學習路線!</span></a></li>
+          <li class="slide"><a href="http://127.0.0.1:5000/SamzF/content/detail/9" target="_blank"><img src="static/images/banner02.jpg"><span class="imginfo">QPython，一個在手機上運行Python的神器</span></a></li>
+          <li class="slide"><a href="http://127.0.0.1:5000/SamzF/content/detail/10" target="_blank"><img src="static/images/banner03.jpg"><span class="imginfo">定時後台運行Python程序</span></a></li>
+          <div class="fader_controls">
+            <div class="page prev" data-target="prev">&lsaquo;</div>
+            <div class="page next" data-target="next">&rsaquo;</div>
+            <ul class="pager_list">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--banner end-->
+      <div class="toppic">
+        <li> <a href="http://127.0.0.1:5000/SamzF/content/detail/12" target="_blank"> <i><img src="static/images/a1.jpg"></i>
+            <h2>linux升級python，安裝pip等</h2>
+            <span>Linux</span>
+          </a> </li>
+        <li> <a href="http://127.0.0.1:5000/SamzF/content/detail/13" target="_blank"> <i><img src="static/images/a2.jpg"></i>
+            <h2>精通Python编程——Python深入淺出教程</h2>
+            <span>python</span>
+          </a> </li>
+      </div>
+    </div>
+    <div class="blank"></div>
+    <!--blogsbox begin-->
+    <div class="blogsbox">
+      <div class="blogs" data-scroll-reveal="enter bottom over 1s">
+        <h3 class="blogtitle"><a href="http://127.0.0.1:5000/SamzF/content/detail/11" target="_blank">Python語言在人工智能(AI)中的優勢 </a></h3>
+        <span class="blogpic"><a href="http://127.0.0.1:5000/SamzF/content/detail/11" title=""><img src="images/toppic01.jpg" alt=""></a></span>
+        <p class="blogtext">
+          本文探討了Python語言在AI領域的優勢與運用。誰會成為AI 和大數據時代的第一開發語言? 這本已是一個不需要爭論的問題。如果說三年前,Matlab、Scala、R、Java
+          ...</p>
+        <div class="bloginfo">
+          <ul>
+            <li class="author"><a href="http://127.0.0.1:5000/SamzF/info">SamzF</a></li>
+            <li class="lmname"><a href="http://127.0.0.1:5000/SamzF/info">學無止盡</a></li>
+            <li class="timer">2019-8-13</li>
+            <li class="view"><span>3267</span>已閱讀</li>
+            <li class="like">199</li>
+          </ul>
+        </div>
+      </div>
+      <div class="blogs" data-scroll-reveal="enter bottom over 1s">
+        <h3 class="blogtitle"><a href="http://127.0.0.1:5000/SamzF/content/detail/14" target="_blank">初學者如何閱讀原始碼？ </a></h3>
+        <p class="blogtext">我喜歡程式設計，它也是我的工作，而且我很高興能夠將大部分的時間都花在開發軟體上。像許多程式設計師一樣，我...</p>
+        <div class="bloginfo">
+          <ul>
+            <li class="author"><a href="http://127.0.0.1:5000/SamzF/info">SamzF</a></li>
+            <li class="lmname"><a href="http://127.0.0.1:5000/SamzF/info">學無止盡</a></li>
+            <li class="timer">2019-12-13</li>
+            <li class="view">467已閱讀</li>
+            <li class="like">1583</li>
+          </ul>
+        </div>
+      </div>
+      <div class="blogs" data-scroll-reveal="enter bottom over 1s">
+        <h3 class="blogtitle"><a href="http://127.0.0.1:5000/SamzF/content/detail/15" target="_blank">對新手友好的PyTorch深度概率推斷工具Brancher，掌握ML和Python基礎即可上手</a></h3>
+        <span class="bplist"><a href="http://127.0.0.1:5000/SamzF/content/detail/15" title="">
+            <li><img src="static/images/a3.jpg" alt=""></li>
+            <li><img src="static/images/a4.jpg" alt=""></li>
+            <li><img src="static/images/a5.jpg" alt=""></li>
+          </a></span>
+        <p class="blogtext">近日，來自荷蘭拉德堡德大學（Radboud University）團隊的開發者在 reddit 上釋出了一個 PyTorch 深度概率推斷工具——Brancher </p>
+        <div class="bloginfo">
+          <ul>
+            <li class="author"><a href="http://127.0.0.1:5000/SamzF/info">SamzF</a></li>
+            <li class="lmname"><a href="http://127.0.0.1:5000/SamzF/info">學無止盡</a></li>
+            <li class="timer">2020-1-13</li>
+            <li class="view"><span>967</span>已閱讀</li>
+            <li class="like">949</li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="sidebar">
+    </div>
+  </article>
+  <footer id="footer">
+    <p>Design by <a href=# target="_blank">煙花部落格</a> <a href="#">返回頂層</a></p>
+  </footer>
+  <a href="#" class="cd-top">Top</a>
+</body>
+
+</html>
