@@ -17,24 +17,25 @@ def tokens(request):
     json_obj=json.loads(json_str)
     username=json_obj.get('username')
     if not username:
-        result={'code':103,'error':'Please me username'}
+        result={'code':103,'error':'請輸入使用者名稱'}
         return JsonResponse(result)
     password=json_obj.get('password')
     if not password:
-        result={'code':104,'error':'Please me password'}
+        result={'code':104,'error':'請輸入密碼'}
         return JsonResponse(result)
 
     #效驗數據====
     user=UserProfile.objects.filter(username=username)
     if not user:
         #故意說用戶或密碼錯 防止有心人士
-        result = {'code':105,'error':'username or password is wrong!!'}
+        result = {'code':105,'error':'用戶或密碼錯誤!!'}
+        return JsonResponse(result)
 
     user=user[0]
     m=hashlib.md5()
     m.update(password.encode())
     if m.hexdigest()!=user.password:
-        result = {'code':106,'error':'username or password is wrong'}
+        result = {'code':106,'error':'用戶或密碼錯誤!!'}
         return JsonResponse(result)
     #make token
     token=make_token(username)
