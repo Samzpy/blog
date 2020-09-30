@@ -27,7 +27,7 @@
 				btn: btnType.ok
 			},
 			error: {
-				title: "错误",
+				title: "錯誤",
 				icon: "-48px -48px",//红色叉
 				btn: btnType.ok
 			},

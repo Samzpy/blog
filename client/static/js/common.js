@@ -166,7 +166,7 @@ function loginOut(){
 
     $('#login_out').on('click', function(){
 
-            if(confirm("确定登出吗？")){
+            if(confirm("確定登出嗎?")){
                 window.localStorage.removeItem('dnblog_token');
                 window.localStorage.removeItem('dnblog_user');
                 window.location.href= '/index';
